@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kashaf | Portfolio</title>
+    <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #ffffff;
+    } nav {
+      text-align: center;
+      background: rgba(255,255,255,0.1);
+      padding: 15px;
+    }
+    nav a {
+      color: #e5ebef;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }nav a:hover {
+      color: #82f9e2;
+      text-shadow: 0 0 10px #82f9e2;
+      transform: translateY(-3px);
+    }
+    section {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 30px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,255,204,0.3);
+    } h2 
+    { color: #82f9e2; }
+    /* Intro Section */
+    #intro {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    }
+    #intro h1 {
+      font-size: 3em;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    #intro p {
+      margin-top: 10px;
+      font-size: 1.2em;
+      color: #dddddd;
+    }
+    #intro button {
+      background:#82f9e2;
+      border:none;
+      padding:12px 25px;
+      border-radius:6px;
+      cursor:pointer;
+      font-weight:bold;
+      margin:10px;
+      transition:0.3s;
+    }
+    #intro button:hover {
+      background: #203a43;
+      
+      color:#82f9e2;
+      box-shadow:0 0 10px #82f9e2;
+    }
+    /* About Section Layout */
+    .about-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .about-box {
+      flex: 1;
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;}
+      .about-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px #82f9e2;
+    }
+    .cgpa-box {
+      margin-top: 15px;
+      padding: 10px;
+      background: #82f9e2;
+      color: #000;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .cgpa-box:hover { transform: scale(1.05); }
+    .about-icons {
+      margin-top: 20px;
+    }
+     .about-icons span {
+      display: block;
+      margin-top: 8px;
+    }
+    .highlights {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  max-width: 400px;
+  font-family: Arial, sans-serif;
+}
+.highlights h3 {
+  margin-bottom: 12px;
+  color: #333;
+  border-left: 4px solid #4a90e2;
+  padding-left: 10px;
+}
+
+.highlights ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.highlights li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  color: #555;
+  position: relative;
+  padding-left: 18px;
+}
+
+.highlights li::before {
+  content: "✔";
+  color: #82f9e2;
+  position: absolute;
+  left: 0;
+}
+.skills-container{
+  background:linear-gradient rgba(255,255,255,0.05);
+  padding:20px;
+  border-radius:10px 10px;
+  transition: 0.3s;
+  box-shadow:0 0 20px rgba(0,255,255,0.3);
+  color:#e6ecec;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap:30px
+}
+
+  .about-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 15px #82f9e2;
+    
+  font-family:'poppins','sans-serif';}
+.skills h2{
+  text-align:center;
+  margin-bottom:10px;
+  color:#82f9e2;
+  
+}.progress {
+  background:rgba(255,255,255,0.1);
+  border-radius:px;
+  overflow:hidden;
+  height:2px;
+  margin-bottom:25 px;
+}
+.progress-bar {
+  height:20px;
+  background:linear-gradient(90deg,#92e0e0,#82f9e2);
+  text-align:right;
+  padding-right:10px;
+  color:#000;
+  font-weight:bold;
+  border-radius:10px;
+  animation:fillbar 2s ease-out forwards,glow 2s infinite alternate;
+}
+@keyframes fillbar{
+  from{width:0};}
+  to{width:var(--target-width);}
+@keyframes glow{
+  from{box-shadow:0 0 10px #00ffcc;}
+  to{box-shadow:0 0 20px #203a35;}
+}
+ /* Projects */
+    .project-box {
+      background: rgba(255,255,255,0.1);
+      margin: 15px 0;
+      padding: 20px;
+      border-radius: 10px;
+      position: relative;
+      transition: 0.3s;
+      
+    }
+    .project-box:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 15px #00ffcc;
+    
+    }
+    .status {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #00ffcc;
+      color: #000;
+      padding: 5px 10px;
+      border-radius: 6px;
+      font-size: 0.8em;
+      font-weight: bold;
+    }
+     /* Contact */
+    .contact-info  {
+      color:#e9f1f1;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      margin-bottom: 20px;
+      justify-content: center;}
+     .contact-info div:hover{
+  
+      background: rgba(255,255,255,0.1);
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px #00ffcc;
+      transition: all 0.3s ease;   }
+      .message-title {
+  color:  #82f9e2 ;
+  font-weight: bold;
+  
+}
+
+    form input, form textarea {
+      color: #00ffcc;
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+      background: rgba(255,255,255,0.1);
+    }
+     form button {
+      background: #00ffcc;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    form button:hover {
+      background: #0c4f66;
+      color: #00ffcc;
+      background: linear-gradient(135deg, #203a43, #2c5364);
+      box-shadow: 0 0 10px #00ffcc;
+    }
+     /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(135deg, #203a43, #2c5364);
+      margin-top: 40px;
+    }
+    footer a {
+      color: #00ffcc;
+      text-decoration: none;
+    }
+</style>
+
+  <nav>
+    
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Intro Section -->
+  <section id="intro">
+    <h1>Kashaf Akram </h1>
+    <p>Software Engineering Student | Future Full-Stack Developer</p>
+    <p>“Turning ideas into impactful digital experiences through code and creativity.”</p>
+    <div>
+      <button onclick="window.location.href='#about'">Explore my journey</button>
+      <button onclick="window.location.href='resume.pdf'" download>Download CV</button>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <!-- Left Box -->
+      <div class="about-box">
+        <h3> Kashaf Akram</h3>
+        <p>Software Engineering Student</p>
+        <p>
+          Hi, I'm Kashaf Akram,a Software Engineering student with a CGPA of 3.82. I am passionate about web developmrnt and teachnology, and I enjoy learning new skills, solving problems,and creating innovative digital solutions. My goals is to grow as a software engineer and contibute to impactful projects. 
+        </p>
+        <div class="cgpa-box">CGPA: 3.82</div>
+        <div class="about-icons">
+          <span>📍 Lahore, Pakistan</span>
+          <span>🔗 LinkedIn | Available for Internship</span>
+        </div>
+      </div>
+      <!-- Right Box -->
+      <div class="about-box">
+        <h3>My Goals</h3>
+        <p>
+          <ul>
+            <li>Become a skilled Software Engineer.</li><br>
+            <li>Contribute to impactful software projects.</li><br>
+            <li>Continuously improve my technical and professional skills.</li><br>
+            <li>Build innovative solutions that make a positive difference.</li><br>
+          </ul>
+        </p>
+      </div>
+      <!-- Extra Box (Optional third) -->
+      <div class="about-box">
+        <h3>Highlights</h3>
+        <p>
+          <ul>
+            <li> Software Engineering Student</li><br>
+            
+            <li> Passionate about Web Development</li><br>
+            <li> Strong Problem-solving Mindset</li><br>
+            <li> Dedicated to Continuous Learning</li><br>
+            <li> Teamwork and Communication</li><br>
+            <li> Eager to Explore Emerging Technologies</li><br>
+          </ul>
+        </p>
+    </div>
+  </section>
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Technical Skills</h2>
+  <!-- First big box -->
+  <div class="about-box">
+        <p>C++ Programming</p>
+        <div class="progress-bar" style="width:90%";>90%</div>
+        <p>HTML & CSS</p>
+        <div class="progress-bar" style="width:88%";>88%</div>
+        <p>JavaScript</p>
+        <div class="progress-bar"style="width:10%";>10%</div>
+        <p>Responsive Web Design</p>
+         <div class="progress-bar"style="width:40%";>40%</div>
+         <p>Git & Github</p>
+          <div class="progress-bar"style="width:20%";>20%</div>
+          </div>
+  </div>
+  </section>
+  <!-- Projects -->
+  <section id="project">
+    <h2>Projects</h2>
+    <h3><p>“Every project is a step closer to success ”</p></h3>
+    <div class="project-box"><span class="status">Completed</span><h3>Calculator in C++</h3></div>
+    <div class="project-box"><span class="status">Completed</span><h3>Portfolio Website</h3></div>
+    <div class="project-box"><span class="status">Completed</span><h3>Styled Blog Page</h3></div>
+    <div class="project-box"><span class="status">Continue</span><h3>Responsive Landing Page</h3></div>
+    <div class="project-box"><span class="status">Coming Soon</span><h3>AI Chatbot Project</h3></div>
+    <div class="project-box"><span class="status">Coming Soon</span><h3>JavaScript To-Do App</h3></div>
+  </section>
+  <section id=contact-information>
+    <h2>Contact Information</h2>
+    <div class="contact-info">
+       <div>📧 <strong>Email:</strong> kashaf100200@gmail.com</div>
+      <div>📞 <strong>Phone:</strong> +923034844675</div>
+      <div>📍 <strong>Location:</strong> Lahore, Pakistan</div>
+    </div>
+    </div> 
+  </section>
+  <section>
+    <h2 class="message-title">Send a Message</h2>
+
+    <form>
+      <label><strong>Name:</strong></label>
+      <input type="text" placeholder="Enter your Name"required>  <br>
+      <label><strong>Email:</strong></label>
+      <input type="text" placeholder="Enter your Email"required>  <br>
+      <label><strong>Message:</strong></label>
+      <textarea rows="5" placeholder="Write ypur Message....."required>  </textarea><br>
+      <button type="Submit">Send Message</button><br>
+    </form>
+  </section>
+   <!-- Footer -->
+  <footer>
+    <h3><p>© 2026 Kashaf Portfolio | Inspired by Innovation </p></h3>
+    <p><a href="#home">Back to Top ↑</a></p>
+  </footer>
+</body>
+</html>
+   
+  
